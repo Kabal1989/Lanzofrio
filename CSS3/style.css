@@ -1,15 +1,15 @@
 body {
-    width: 100%;
-    height: 100%;
+    overflow-x: hidden;
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: rgb(170, 170, 194);
+    opacity: 0.9;
+    background-image: url("/IMAGENS/background.jpg");
 }
 
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 .topo-nav {
@@ -29,21 +29,43 @@ body {
     color: #ffffff;
     list-style-type: none;
 }
-.topo-nav span {
-    display: flex;
-    padding-top: 12px;
-}
 
-.topo-nav li {
+
+.topo-nav ul li a {
     display: flex;
-    padding-right: 50px;
+    padding-left: 40px;
+    text-decoration: none;
+    text-shadow: 1px 1px #000000;
+    color: #ffffff;
 }
 
 .topo-nav img {
-    display: flex;
     margin-right: 5px;
     margin-top: 10px;
 }
+
+.topo-nav span {
+    margin-top: 10px;
+}
+
+@media  (max-width: 900px) {
+    .topo-nav ul {
+        display: flex;
+        margin-left: 40%;
+    }
+}
+@media  (max-width: 730px) {
+    .topo-nav ul {
+        display: flex;
+        margin-left: 30%;
+    }
+}
+@media (max-width: 623px) {
+    .topo-nav ul li {
+        display: none;
+    }
+}
+
                                                     /* CABEÇALHO */
 
 .cabecalho {
@@ -85,44 +107,23 @@ body {
     display: flex;
     position: absolute;
     margin-top: 30px;
-    margin-left: 70%;
+    margin-left: 50%;
 }
 
 .cabecalho ul li {
-    padding-right: 50px;
+    
+    padding-left: 20px;
     list-style-type: none;
 }
 
 .servico  {
     font-size: 20px;   
 }
-.main .galeria {
-    position: absolute;
-    
-   
-}
+
                                                     /*CARROSSEL*/
-.galeria {
-    position: absolute;
-    margin: 0 auto;
-    width: 50%;
-    height: 100%;
-    margin-left: 250px;
-    overflow: hidden;
-    
-}
-            
-.galeria .fotos {
-    width: 500%;
-    animation-name: animacão;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
 
-.galeria .fotos img {
 
-    width: 19.99%;
-}
+
 
                                                     /* RODAPÉ */
 
